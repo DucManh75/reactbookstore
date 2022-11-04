@@ -1,0 +1,84 @@
+body{
+    background-image: url('../header/bookstore1.png');
+    background-size: cover;
+    background-position-y: -100px;
+}
+*{
+    margin: 0%;
+    box-sizing: border-box;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#header{
+    background-color: rgba(20, 1, 1, 0.685);
+}
+#logo{
+    padding: 5px 0px;
+}
+#logo img{
+    max-width: 100px;
+    height: auto;
+    margin-left: 260%;
+}
+.search-box{    
+    background: #f8f8f8f8;
+    height: 45px;
+    border-radius: 40px;
+    padding: 10px;
+    margin-left: 16%;
+}
+.search-btn{
+    float: right;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background: rgb(175, 171, 171);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    
+}
+.search-txt{
+    border: none;
+    background: none;
+    outline: none;
+    float: left;
+    padding: 0;
+    color: rgb(3, 7, 10);
+    font-size: 14px;
+    transition: 0,4s;
+    line-height: 35px;
+    width: 350px;
+}
+
+.fa-comment{
+    font-size: 30px;
+    color: white;
+    margin-left: 200%;
+}
+.list-button{
+    margin-left: 8%;
+}
+.button{
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: aliceblue;
+    text-decoration: none;
+
+}
+.button.Login{
+    border: 1px groove  #100f0f;
+}
+.button.Login:hover{
+    background-color: #b1a2a2f8;
+}
+.button.Register{
+    border: 1px groove  #100f0f;
+}
+.button.Register:hover{
+    background-color: #b1a2a2f8;
+}
