@@ -7,7 +7,7 @@
 }
 .signup {
   font-size: 1.5rem;
-  color:rgb(119, 119, 252);
+  color:rgb(2, 2, 2);
   font-weight: 700;
   text-align: center;
 }
@@ -15,20 +15,20 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
+  max-height: 100vh;
   background-color: rgba(239, 240, 255, 0);
-  scroll-behavior: smooth;
   text-rendering: optimizeSpeed;
   line-height: 1.5;
   padding: 1rem 2rem 1rem 2rem;
   font-size: 1.15rem;
 }
 .App {
-  background-color: white;
+  margin-top: 6%;
+  background-color: rgb(255, 255, 255);
   padding: 2rem;
   min-width: 500px;
   border-radius: 14px;
-  box-shadow: 0px 0px 14px 3px rgb(222, 224, 250);
+  box-shadow: 0px 0px 14px 3px rgb(167, 167, 173);
 }
 
 .info {
@@ -44,7 +44,7 @@
   }
   input {
     border: none;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid rgb(0, 0, 0);
     padding-bottom: 0.25rem;
     outline: none;
   }
@@ -53,15 +53,9 @@
     cursor: pointer;
     align-self: flex-end;
     padding: 0.5rem;
-    background-color: rgb(104, 187, 255);
+    background-color: rgb(10, 10, 10);
     color: white;
     border: none;
     font-size: 1rem;
     border-radius: 8px;
-  }
-  
-  .errorMsg {
-    max-width: 100%;
-    font-size:0.75rem;
-    color:rgb(248, 106, 106);
   }

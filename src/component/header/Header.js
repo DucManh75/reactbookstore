@@ -16,7 +16,12 @@ function Header() {
                         </div>
 
                         <ul id="main-menu">
-                            <li><a href="">Hot</a></li>
+                            
+                            <li><a href="/">Trang chủ</a></li>
+
+
+
+
                             <li><a href="">Thể loại</a>
                                 <ul className="sub-menu">
                                     <li><a href="">Ngôn Tình</a></li>
@@ -32,14 +37,14 @@ function Header() {
                                 </ul>
                             </li>
                             <li><a href="">Lịch sử</a></li>
-                            <li><a href="">Ngày xuất bản</a></li>
+                            <li><a href="">Bán chạy</a></li>
                             <li><a href="">Theo dõi</a></li>
                         </ul>
 
 
                         <div className="search-box">
                                     <input type="text" className="search-txt" placeholder="Tìm truyện ......"/>
-                                    <a href="#" className="search-btn">
+                                    <a href="" className="search-btn">
                                         <i className="fa-solid fa-magnifying-glass"></i>
                                     </a>
                                 
@@ -47,20 +52,20 @@ function Header() {
 
                         
                         <div className='comment'>
-                        <a href="@">
+                        <a href="">
                             <i className="fa-solid fa-comment"/>
                         </a>
                         </div>
 
                         <div className="list-button">
-                            <a href="#" className="button Login">
-                                <span className="button-text">
+                            <NavLink to="/login" className="button Register">
                                     Đăng Nhập
-                                </span>
-                            </a>
+                            </NavLink>
+                        
                             <NavLink to="/signup" className="button Register">
                                     Đăng Ký
                             </NavLink>
+        
                         </div>
                     </nav>
                 </div>
