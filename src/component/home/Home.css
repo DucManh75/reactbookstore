@@ -16,7 +16,6 @@ h3{
     display: inline-block;
 }
 
-
 ul.products{
     list-style: none;
     display: flex;
@@ -28,7 +27,7 @@ ul.products li{
     padding-left: 15px;
     padding-right: 15px;
     box-sizing: border-box;
-
+    margin-bottom: 30px;
 }
 ul.products li img{
     max-width: 100%;
