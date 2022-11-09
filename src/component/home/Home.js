@@ -1,4 +1,5 @@
 import React from 'react';
+
 import chipheo from "./img/chipheo.jpg"
 import laohac from "./img/laohac.jpg"
 import tatden from "./img/tatden.jpg"
@@ -11,15 +12,18 @@ import nhungngaythoau from "./img/nhungngaythoau.jpg"
 import lamdi from "./img/lamdi.jpg"
 
 import './Home.css'
-
+import Slideshow from "../slideshow/Slideshow"
 
 function Home() {
   return (
     <>
         <div id='wrapper2'>
+
             <div className='headline'>
                 <h3>Sản phẩm bán chạy</h3>
+                <Slideshow />
             </div>
+
             <ul className='products'>
               <li>
                   <div className='product-item'>
@@ -178,4 +182,4 @@ function Home() {
   )
 }
 
-export default Home
+export default Home;
