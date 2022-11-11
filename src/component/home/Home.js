@@ -20,7 +20,7 @@ function Home() {
         <div id='wrapper2'>
 
             <div className='headline'>
-                <h3>Sản phẩm bán chạy</h3>
+                <h3>Chương trình khuyến mại</h3>
                 <Slideshow />
             </div>
 

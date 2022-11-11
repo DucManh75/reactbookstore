@@ -1,8 +1,13 @@
 import React from 'react';
-import banner1 from './img/banner1.jpg';
 import '../slideshow/Slideshow.css';
 import Slider from "react-slick";
-// Import css files
+import banner1 from './img/banner1.jpg';
+import banner2 from './img/banner2.jpg';
+import banner3 from './img/banner3.jpg';
+import banner4 from './img/banner4.jpg';
+import banner5 from './img/banner5.jpg';
+
+// Import css files from Carousel
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
@@ -23,19 +28,16 @@ function Slideshow() {
               <img src={banner1}/>
             </div>
             <div>
-              <img src={banner1}/>
+              <img src={banner2}/>
             </div>
             <div>
-              <img src={banner1}/>
+              <img src={banner3}/>
             </div>
             <div>
-             <img src={banner1}/>
+             <img src={banner4}/>
             </div>
             <div>
-              <img src={banner1}/>
-            </div>
-            <div>
-              <img src={banner1}/>
+              <img src={banner5}/>
             </div>
           </Slider>
       </div>
