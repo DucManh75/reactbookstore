@@ -39,29 +39,52 @@ ul.products li .product-info a{
 
 }
 ul.products li .product-info a.product-name{
-    font-size: 19px;
+    font-size: 24px;
+    color: black;
+    padding: 3spx 0px;
+}
+ul.products li .product-info .product-author{
+    font-size: 22px;
     color: black;
     padding: 3px 0px;
 }
-ul.products li .product-info .product-author{
-    font-size: 19px;
+ul.products li .product-info .product-genres{
+    font-size: 20px;
     color: black;
     padding: 3px 0px;
+}
+ul.products li .product-info .product-publishDate{
+    font-size: 20px;
+    color: black;
+    padding: 3px 0px;
+}
+ul.products li .product-info .product-inventory{
+    font-size: 19px;
+    color: black;
+    padding: 7px 0px;
 }
 ul.products li .product-info .product-price{
     color: black;
-    font-size: 18px;
-    font-weight: 600;
-    padding: 2px;
+    font-size: 20px;
+    padding: 3px 0px;
 }
 button.btn:hover{
     background-color: #bebebe;
 }
-
+button.button:hover{
+    background-color: #bebebe;
+}
 button.btn{
     background-color: #fcfcfc;
-    margin-left: 50px;
+    margin-left: 50%;
     color: black;
     font-size: 18px;
     border: 1px outset;
 }
+/* button.button{
+    background-color: #fcfcfc;
+    left: 0px;
+    color: black;
+    font-size: 18px;
+    border: 1px outset;
+} */

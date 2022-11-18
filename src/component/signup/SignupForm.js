@@ -2,26 +2,37 @@ import { useState } from "react";
 import "./SignupForm.css";
 
 
-
-    const SignupForm = () => {
+const SignupForm = () => {
     const [email, setemail] = useState("");
     const [name, setname] = useState("");
     const [phone, setphone] = useState("");
     const [password,setpassword] = useState("");
     const [confirmpassword, setconfirmpassword] = useState("");
     
+    let user = {
+        name: String,
+        password: String,
+        email: String,
+        phone: Number,
+    }
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        
-        const newUser = {
+
+        if(password === confirmpassword)
+        {
+         user = {
             email: email,
             name: name,
             password: password,
-            confirmpassword: confirmpassword,
             phone: phone,
         };
-        console.log(newUser)
+        console.log(user)
+    }
+    else {
+        alert("Xac nhan mat khau khong chinh xac!")
+        setconfirmpassword('')
+    }
     };
 
 
@@ -34,6 +45,7 @@ import "./SignupForm.css";
                         <form className="info" onSubmit={handleSubmit}>
                             <label> Họ và tên</label>
                             <input type="text" 
+                            value={name}
                             id="name" 
                             name="name" 
                             onChange={(e) => setname(e.target.value)}
@@ -41,6 +53,7 @@ import "./SignupForm.css";
 
                             <label> Email</label>
                             <input type="email" 
+                            value={email}
                             id="email" 
                             name="email"
                             onChange={(e) => setemail(e.target.value)}
@@ -48,6 +61,7 @@ import "./SignupForm.css";
 
                             <label> Mật khẩu</label>
                             <input type="Password" 
+                            value={password}
                             id="Password" 
                             name="Password"
                             onChange={(e) => setpassword(e.target.value)}
@@ -55,6 +69,7 @@ import "./SignupForm.css";
 
                             <label> Xác nhận mật khẩu</label>
                             <input type="Password" 
+                            value={confirmpassword}
                             id="Password" 
                             name="Password"
                             onChange={(e) => setconfirmpassword(e.target.value)}
@@ -62,6 +77,7 @@ import "./SignupForm.css";
 
                             <label> Số điện thoại</label>
                             <input type="text" 
+                            value={phone}
                             id="Phone" 
                             name="Phone" 
                             onChange={(e) => setphone(e.target.value)}
