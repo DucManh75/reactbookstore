@@ -6,7 +6,7 @@ function Home() {
 
     const [listBooks, setListBooks] = useState([])
     useEffect(() => {
-        fetch('http://localhost:5000/v1/book')
+        fetch('https://ducmanhapi.herokuapp.com/api/get')
         .then(data => data.json())
         .then(data => {
             setListBooks(data)
